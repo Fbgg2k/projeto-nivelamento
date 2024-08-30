@@ -1,0 +1,31 @@
+/* src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  --bg-color: #1a202c; /* exemplo: fundo escuro */
+  --text-color: #fff; /* exemplo: texto claro */
+}
+
+.light {
+  --bg-color: #fff; /* exemplo: fundo claro */
+  --text-color: #1a202c; /* exemplo: texto escuro */
+}
+
+body {
+  @apply bg-[var(--bg-color)] text-[var(--text-color)];
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 80px;
+  bottom: 50px;
+}
+
+.carousel-caption button {
+  margin-top: 0.5rem;
+
+}

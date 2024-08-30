@@ -1,0 +1,132 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+
+.product-item {
+  flex: 0 0 33.33%; /* Cada produto ocupa 33.33% da largura do container */
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card {
+  position: relative;
+}
+
+.product-image {
+  width: 60%; /* Ajusta a largura da imagem */
+  border-radius: 10px;
+  margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+  margin-left: 170px;
+  margin-top: 50%;
+  
+}
+
+.product-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*background: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+  background-color: rgba(31, 41, 55, 0.7); /* Cor bg-gray-800 com 70% de opacidade */
+  border: 1px solid #D1D5DB; /* Cor border-gray-300 */
+  color: white;
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Arredonda as bordas */
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-left: 170px;
+}
+
+.product-description.visible {
+  opacity: 1;
+}
+
+.add-to-cart-btn {
+  margin-top: 20px; /* Espaçamento acima do botão */
+
+}
+
+.add-to-cart-btn:hover {
+  color: #4CAF50; /* Cor de hover */
+}
+.add-to-cart-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-control {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.carousel-control.prev {
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control.next {
+  right: -9%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.floating-cart {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.floating-cart img {
+  width: 30px;
+  height: 30px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}

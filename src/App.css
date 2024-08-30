@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 70px; /* Espaço para a navbar fixa */
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.product-list {
+  margin: 20px;
+}

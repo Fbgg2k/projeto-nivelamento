@@ -1,0 +1,97 @@
+:root {
+  --footer-height: 10px; /* Altura do rodapé */
+  --footer-padding: 20px; /* Espaçamento interno do rodapé */
+}
+
+.footer {
+  position: relative;
+  bottom: 0; /* Fixar no rodapé */
+  background-image: url('/public/geekbackground.jpg'); /* Caminho da imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px; /* Espaçamento interno do footer */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%; /* Ajuste conforme necessário */
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 60px;
+}
+
+.footer-content {
+  background-color: rgba(31, 41, 55, 0.7); /* Cor bg-gray-800 com 70% de opacidade */
+  border: 1px solid #D1D5DB; /* Cor border-gray-300 */
+  padding: 25px;
+  border-radius: 8px; /* Arredonda as bordas */
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around; /* Espaçamento igual entre as colunas */
+  gap: 20px; /* Espaçamento entre as colunas */
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaçamento entre os itens */
+}
+
+.footer-links li {
+  display: block;
+  text-align: left;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #4CAF50; /* Cor de hover */
+}
+
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.subscribe-input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #D1D5DB; /* Borda cinza */
+  outline: none;
+  margin-bottom: 10px; /* Espaço abaixo do input */
+  width: 100%; /* Largura total */
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os ícones */
+}
+
+.social-icon {
+  color: white;
+  font-size: 1.5rem; /* Tamanho dos ícones */
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #4CAF50; /* Cor de hover */
+}
+
+.footer p {
+  margin: 10px 0 0 0;
+  margin-top: 20px;
+}

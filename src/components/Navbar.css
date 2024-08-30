@@ -1,0 +1,125 @@
+/* src/components/Navbar.css */
+.navbar {
+  background-color: rgba(11, 11, 11, 0.7); /* Fundo semitransparente */
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Fixa a barra no topo da tela */
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  width: calc(100% - 150px); /* Ajusta a largura para deixar espaço dos dois lados */
+  margin: 0 auto; /* Centraliza a barra de navegação horizontalmente */
+  border-radius: 8px;
+  z-index: 1000; /* Garante que a barra fique sobre outros elementos */
+  transition: background-color 0.3s ease, top 0.3s ease; /* Transição suave para a mudança de cor e posição */
+}
+
+.navbar.hidden {
+  top: -100px; /* Esconde a barra de navegação acima da tela */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo a {
+  color: #4CAF50; /* Cor de hover */
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 20px;
+
+}
+
+.navbar-item a:hover {
+  color: #4CAF50; /* Cor cinza no hover */
+}
+
+.navbar-link {
+  /*color: #fff;*/
+  color: #4CAF50; /* Cor de hover */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #4CAF50; /* Cor de hover */
+}
+
+.navbar-search {
+  position: relative;
+}
+
+.navbar-search input {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+.search-results {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  background: white;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-results li:hover {
+  background: #f0f0f0;
+}
+
+/* src/components/Navbar.css */
+.navbar {
+  @apply bg-gray-800 text-white p-4 flex justify-between items-center fixed w-full z-10;
+}
+
+.navbar-container {
+  @apply flex justify-between items-center w-full;
+}
+
+.navbar-logo a {
+  @apply text-white text-xl no-underline;
+}
+
+.navbar-menu {
+  @apply list-none flex gap-4;
+}
+
+.navbar-item a {
+  @apply text-white no-underline;
+}
+
+.navbar-search input {
+  @apply p-2 rounded;
+}
+
+.theme-toggle-btn {
+  @apply ml-4 p-2 rounded bg-gray-600 text-white cursor-pointer;
+}
